@@ -1,4 +1,5 @@
 node_modules
+.vercel/cache
 package-lock.json
 ca.crt
 ca.key

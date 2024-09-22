@@ -21,7 +21,8 @@ const io = socketio(expressServer,{
     cors: {
         origin: [
             "https://localhost",
-            'https://192.168.0.117' //if using a phone or another computer
+            'https://192.168.189.241',
+            'https://gleaming-sfogliatella-4574d6.netlify.app/' //if using a phone or another computer
         ],
         methods: ["GET", "POST"]
     }

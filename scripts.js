@@ -3,7 +3,8 @@ const password = "x";
 document.querySelector('#user-name').innerHTML = userName;
 
 //if trying it on a phone, use this instead...
-const socket = io.connect('https://192.168.0.117:8181/',{
+const socket=io.connect('https://gleaming-sfogliatella-4574d6.netlify.app/',{
+// const socket = io.connect('https://192.168.189.241:8181/',{
 // const socket = io.connect('https://localhost:8181/',{
     auth: {
         userName,password

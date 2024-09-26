@@ -1,11 +1,13 @@
+//import {createOfferEls} from './socketListeners.js';
+
 const userName = "video-"+Math.floor(Math.random() * 100000)
 const password = "x";
 document.querySelector('#user-name').innerHTML = userName;
 
 //if trying it on a phone, use this instead...
-const socket=io.connect('https://gleaming-sfogliatella-4574d6.netlify.app/',{
-// const socket = io.connect('https://192.168.189.241:8181/',{
-// const socket = io.connect('https://localhost:8181/',{
+// const socket=io.connect('https://bucolic-marigold-772e26.netlify.app/',{
+// const socket = io.connect('https://LOCAL-DEV-IP-HERE:8181/',{
+const socket = io.connect('https://localhost:8181/',{
     auth: {
         userName,password
     }
@@ -84,7 +86,7 @@ const fetchUserMedia = ()=>{
         try{
             const stream = await navigator.mediaDevices.getUserMedia({
                 video: true,
-                // audio: true,
+                audio: true,
             });
             localVideoEl.srcObject = stream;
             localStream = stream;    
@@ -155,6 +157,7 @@ const addNewIceCandidate = iceCandidate=>{
 
 
 document.querySelector('#call').addEventListener('click',call)
+
 function show(){
-    document.getElementById('answer').style.display='inline';
+    document.getElementById('answer').style.display='inline'
 }

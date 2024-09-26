@@ -22,7 +22,7 @@ const io = socketio(expressServer,{
         origin: [
             "https://localhost",
             'https://192.168.189.241',
-            'https://gleaming-sfogliatella-4574d6.netlify.app/' //if using a phone or another computer
+            'https://bucolic-marigold-772e26.netlify.app/' //if using a phone or another computer
         ],
         methods: ["GET", "POST"]
     }

@@ -5,8 +5,9 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "nodemon":"server.js"
+    "build":"npm run build",
+    "start": "node server.js"
+    
   },
   "keywords": [],
   "author": "",

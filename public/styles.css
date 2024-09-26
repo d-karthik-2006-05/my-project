@@ -28,11 +28,10 @@
 
 #answer{
     position: absolute;
-    display: inline;
-    /* display:flexbox; */
-    display:none;
-    
-    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+   display: inline;
+   display: none;
 }
 #showanswer{
     height: 100px;
